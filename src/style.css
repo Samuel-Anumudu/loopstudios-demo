@@ -1,7 +1,142 @@
-.img-mobile {
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+/* CSS Resets to Default */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefins Sans', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  font-size: 1rem;
+}
+/*  LET's START STYLING OUR WEBSITE */
+
+header {
+  background-image: url('../public/images/mobile/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+}
+
+.hero-text {
+  border: 2px solid #fff;
+  margin-top: 11em;
+}
+
+.hero-text h1 {
+  max-width: 200px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 2.5rem;
+  font-weight: 100;
+  padding: 0.5em;
+}
+
+.logo {
+  font-family: 'Dongle', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  width: 87%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+}
+
+.fa-times {
+  font-size: 1.7rem;
+}
+
+.open {
   display: none;
 }
 
-.btn-mobile {
+.topnav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.7em;
+}
+
+.nav {
+  display: none;
+  padding-top: 8.5em;
+}
+
+/* Main Styling */
+
+section.about {
+  padding-top: 6.2em;
+}
+
+.about-text {
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-title {
+  color: #000;
+  font-size: 2.1em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1.5em;
+}
+
+.gallery-title {
+  color: #000;
+  font-size: 2.1em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 3em;
+  padding-bottom: 1.5em;
+}
+
+.about-paragraph {
+  color: #888;
+  text-align: center;
+  line-height: 1.7;
+  padding-top: 1.3em;
+}
+
+.btn-desktop {
+  display: none;
+}
+.img-desktop {
   display: none;
 }
